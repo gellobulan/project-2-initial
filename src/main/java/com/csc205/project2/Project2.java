@@ -13,29 +13,22 @@ public class Project2 {
 
     public static void main(String[] args) {
 
-        /*
-        The following code works with the example design given.
-         */
+        // Instantiate the shapes
+        Sphere sphere = new Sphere(2.0);
+        Cube cube = new Cube(5.0);
+        Cylinder cylinder = new Cylinder(4.0, 1.0);
+        Cone cone = new Cone(4.0, 2.0); // Ensure this class is implemented
 
-        /*ThreeDimensionalShape sphere = new Sphere(2.0);
-        ThreeDimensionalShape cube = new Cube(5.0);
-        ThreeDimensionalShape cylinder = new Cylinder(4.0, 1.0);
-
-        // We'll cover this stuff in module 4
-        List<ThreeDimensionalShape> shapes = new ArrayList<>();
+        // Create a list to hold the shapes
+        List<Shape> shapes = new ArrayList<>();
         shapes.add(sphere);
         shapes.add(cube);
         shapes.add(cylinder);
+        shapes.add(cone);
 
-        shapes.forEach(System.out::println);*/
-
-        /*
-        The following code works with the code given.
-         */
-
-        Sphere sphere = new Sphere(2.0);
-        System.out.println(sphere);
+        // Print each shape's details
+        for (Shape shape : shapes) {
+            System.out.println(shape);
+        }
     }
-
 }
-
